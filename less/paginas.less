@@ -1,0 +1,50 @@
+.paginas{
+     grid-area: paginas;
+}
+.paginas-flex{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     
+}
+.cajaPagina{
+     flex: 0 0 calc(100%);
+     background-color: @color3;
+     margin-bottom: 1.25em;
+     border: 1px solid @color3Hover;
+     img{
+          height: 12.5em;
+     }
+     .pagina-img{
+          position: relative;
+          overflow: hidden;
+          .tecnologias{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               padding: 0.625em;
+               background-color: @color3;
+               font-style: italic;
+               text-transform: uppercase;
+               color: @color2;
+               height: 3.125em;
+               position: absolute;
+               bottom: -80px;
+               left: 0;
+               right: 0;
+               transition: all .3s ease;
+          }
+     }
+     .link-pagina{
+          background-color: @color1;
+          color: @color2;
+          transition: all .3s ease-in;
+     }
+     .link-pagina:hover{
+          background-color: @color3Hover;
+     }
+}
+.cajaPagina:hover .tecnologias{
+     bottom: 0;
+     opacity: 90%;
+}
