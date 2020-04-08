@@ -84,10 +84,15 @@ header .header-content {
   right: 0;
   transition: all 0.3s ease;
 }
+.cajaPagina .link {
+  display: flex;
+  justify-content: center;
+}
 .cajaPagina .link-pagina {
   background-color: black;
   color: white;
   transition: all 0.3s ease-in;
+  flex: 1;
 }
 .cajaPagina .link-pagina:hover {
   background-color: #a4a4a4;
