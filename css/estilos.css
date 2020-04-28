@@ -7,3 +7,106 @@
 html {
   font-size: 10px;
 }
+@media (min-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .gridIndex {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.header__barra {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .header__barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header__contenedor-logotipo {
+  padding: 10px 0;
+}
+.header__logotipo {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header__contenedor-menu {
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .header__hamburguer {
+    display: none;
+  }
+}
+.header__icono-hamburguer {
+  font-size: 1.5625rem;
+}
+.header__hamburguer:hover {
+  cursor: pointer;
+}
+.header__enlaces {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+@media (min-width: 768px) {
+  .header__enlaces {
+    max-height: initial;
+    overflow: visible;
+  }
+}
+.header__enlaces.mostrar {
+  max-height: 500px;
+}
+.header__enlace {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  padding: 15px 10px;
+  color: black;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .header__enlace {
+    display: inline-block;
+  }
+}
+.header__enlace:hover {
+  background-color: #c3c3c3;
+}
+
+/* Tema oscuro */
+.header.oscuro {
+  background-color: black;
+  color: white;
+}
+.header.oscuro .header__enlace {
+  color: white;
+}

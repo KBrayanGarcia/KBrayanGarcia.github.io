@@ -1,0 +1,10 @@
+header.header.oscuro
+     nav.header__barra
+          .header__contenedor-logotipo
+               h1.header__logotipo Portafolio Personal
+          .header__contenedor-menu
+               .header__hamburguer
+                    i(class="fas fa-bars header__icono-hamburguer")
+               .header__enlaces
+                    each enlace in enlaces
+                         a.header__enlace(href="#")=enlace

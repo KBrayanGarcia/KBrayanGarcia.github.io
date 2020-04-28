@@ -3,4 +3,7 @@ include _herramientas.pug
 html(lang="es")
      include _head.pug
      body
-          block contenido
+          .gridIndex
+               include _header.pug
+               script(src="../js/script.js")
+               block contenido

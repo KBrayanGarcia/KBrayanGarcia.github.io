@@ -1,0 +1,66 @@
+.header{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     &__barra{
+          width: 100%;
+          @include media(tablets){
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+          }
+     }
+     &__contenedor-logotipo{
+          padding: 10px 0;
+     }
+     &__logotipo{
+          @include fuente($fuente1)
+     }
+     &__contenedor-menu{
+          padding: 10px 0;
+     }
+     &__hamburguer{
+          @include media(tablets){
+               display: none;
+          }
+     }
+     &__icono-hamburguer{
+          font-size: 1.5625rem;
+     }
+     &__hamburguer:hover{
+          cursor: pointer;
+     }
+     &__enlaces{
+          max-height: 0px;
+          overflow: hidden;
+          transition:all 1s ease;
+          @include media(tablets){
+               max-height: initial;
+               overflow: visible;
+          }
+     }
+     &__enlaces.mostrar{
+          max-height: 500px;
+     }    
+     &__enlace{
+          @include fuente($fuente2);
+          display: block;
+          padding: 15px 10px;
+          color: black;
+          text-transform: capitalize;
+          @include media(tablets){
+               display: inline-block;
+          }
+     } 
+     &__enlace:hover{
+          background-color: #c3c3c3;
+     }
+}
+/* Tema oscuro */
+.header.oscuro{
+     background-color: black;
+     color: white;
+     .header__enlace{
+          color: white;
+     }
+}

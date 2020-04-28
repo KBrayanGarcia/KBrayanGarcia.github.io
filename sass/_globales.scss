@@ -1,3 +1,23 @@
+$fuente1: 'PT Sans', sans-serif;
+$fuente2: 'Open Sans', sans-serif;
+
+@mixin fuente($fuente){
+     @if $fuente == $fuente1{
+          font-family: $fuente1;
+          font-weight: 700;
+          text-transform: uppercase;
+     }@else{
+          font-family: $fuente2;
+     }
+}
+@mixin contenedor(){
+     @include media(tablets){
+          width: 95%;
+          max-width: 1200px;
+          margin: 0 auto;
+     }
+}
+
 *{
      padding: 0;
      margin: 0;
@@ -5,4 +25,16 @@
 }
 html{
      font-size: 10px; // 10px = 1rem;
+     @include media(movil-l){
+          font-size: 12px;
+     }
+     @include media(tablets){
+          font-size: 14px;
+     }
+     @include media(desktops){
+          font-size: 16px;
+     }
+}
+a{
+     text-decoration: none;
 }
