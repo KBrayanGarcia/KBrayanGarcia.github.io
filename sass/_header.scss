@@ -4,6 +4,7 @@
      text-align: center;
      &__barra{
           width: 100%;
+          @include contenedor();
           @include media(tablets){
                display: flex;
                justify-content: space-between;
@@ -14,12 +15,16 @@
           padding: 10px 0;
      }
      &__logotipo{
-          @include fuente($fuente1)
+          @include fuente($fuente2)
      }
      &__contenedor-menu{
           padding: 10px 0;
      }
      &__hamburguer{
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           @include media(tablets){
                display: none;
           }
@@ -40,10 +45,11 @@
           }
      }
      &__enlaces.mostrar{
+          margin-top: 10px;
           max-height: 500px;
      }    
      &__enlace{
-          @include fuente($fuente2);
+          @include fuente($fuente1);
           display: block;
           padding: 15px 10px;
           color: black;

@@ -2,12 +2,12 @@ $fuente1: 'PT Sans', sans-serif;
 $fuente2: 'Open Sans', sans-serif;
 
 @mixin fuente($fuente){
-     @if $fuente == $fuente1{
-          font-family: $fuente1;
+     @if $fuente == $fuente2{
+          font-family: $fuente2;
           font-weight: 700;
           text-transform: uppercase;
      }@else{
-          font-family: $fuente2;
+          font-family: $fuente1;
      }
 }
 @mixin contenedor(){
