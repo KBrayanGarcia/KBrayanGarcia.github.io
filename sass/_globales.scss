@@ -11,8 +11,8 @@ $fuente2: 'Open Sans', sans-serif;
      }
 }
 @mixin contenedor(){
+     width: 95%;
      @include media(tablets){
-          width: 95%;
           max-width: 1200px;
           margin: 0 auto;
      }
@@ -24,15 +24,15 @@ $fuente2: 'Open Sans', sans-serif;
      box-sizing: border-box;
 }
 html{
-     font-size: 10px; // 10px = 1rem;
+     font-size: 12px; // 10px = 1rem;
      @include media(movil-l){
-          font-size: 12px;
-     }
-     @include media(tablets){
           font-size: 14px;
      }
-     @include media(desktops){
+     @include media(tablets){
           font-size: 16px;
+     }
+     @include media(desktops){
+          font-size: 18px;
      }
 }
 a{

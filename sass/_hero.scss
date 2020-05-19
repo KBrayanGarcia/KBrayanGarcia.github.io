@@ -1,0 +1,72 @@
+.hero{
+     background-image: url('../img/hero.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 100vh;
+     max-width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     @include media(tablets){
+          height: 60vh;
+     }
+     &:before{
+          content: ' ';
+          background-color: rgba(black, .60);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right:0;
+     }
+     &__contenedor{
+          z-index: 1;
+          color: white;
+          text-align: center;
+          @include contenedor();
+     }
+     &__button{
+          display:block;
+          color: white;
+     }
+     &__title,
+     &__ubicacion{
+          margin-bottom: 10px;
+     }
+     &__title{
+          @include fuente($fuente2);
+          font-size: 1.75rem;
+     }
+     &__icon{
+          font-size: 1.875rem;
+          margin-right: 5px;
+     }
+     &__ubi{
+          @include fuente($fuente1);
+          font-size: 1.5625rem;
+     }
+     &__button{
+          display: inline-block;
+          background-color: white;
+          color: black;
+          @include fuente($fuente1);
+          padding: 0.625rem 3.125rem;
+          text-transform: uppercase;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          transition: all .3s ease-in-out;
+          -webkit-transition: all .3s ease-in-out;
+          -moz-transition: all .3s ease-in-out;
+          -ms-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+          &:hover{
+               background-color: #c3c3c3;
+          }
+     }
+     
+}

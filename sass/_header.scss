@@ -12,14 +12,12 @@
           }
      }
      &__contenedor-logotipo{
-          padding: 10px 0;
+          padding: 15px 0 5px 0;
      }
      &__logotipo{
           @include fuente($fuente2)
      }
-     &__contenedor-menu{
-          padding: 10px 0;
-     }
+     
      &__hamburguer{
           height: 40px;
           display: flex;
@@ -45,7 +43,6 @@
           }
      }
      &__enlaces.mostrar{
-          margin-top: 10px;
           max-height: 500px;
      }    
      &__enlace{
@@ -64,7 +61,7 @@
 }
 /* Tema oscuro */
 .header.oscuro{
-     background-color: black;
+     background-color: #141414;
      color: white;
      .header__enlace{
           color: white;
