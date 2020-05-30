@@ -49,19 +49,19 @@
           @include fuente($fuente1);
           display: block;
           padding: 15px 10px;
-          color: black;
+          color: $color-primario;
           text-transform: capitalize;
           @include media(tablets){
                display: inline-block;
           }
      } 
      &__enlace:hover{
-          background-color: #c3c3c3;
+          background-color: $color-claro-secundario;
      }
 }
 /* Tema oscuro */
 .header.oscuro{
-     background-color: #141414;
+     background-color: $color-primario-secundario;
      color: white;
      .header__enlace{
           color: white;

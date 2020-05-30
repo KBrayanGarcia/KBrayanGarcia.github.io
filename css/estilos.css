@@ -27,6 +27,22 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.boton {
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-align: center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -35,11 +51,11 @@ a {
 .header__barra {
   width: 100%;
   width: 95%;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .header__barra {
     max-width: 1200px;
-    margin: 0 auto;
   }
 }
 @media (min-width: 768px) {
@@ -144,11 +160,11 @@ a {
   color: white;
   text-align: center;
   width: 95%;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .hero__contenedor {
     max-width: 1200px;
-    margin: 0 auto;
   }
 }
 .hero__button {
@@ -192,4 +208,73 @@ a {
 }
 .hero__button:hover {
   background-color: #c3c3c3;
+}
+
+.paginas {
+  padding: 10px 0;
+}
+.paginas__titulo {
+  text-align: center;
+  padding: 0 0 8px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paginas__contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-rows: 1fr;
+  grid-auto-rows: auto;
+  gap: 15px;
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .paginas__contenedor {
+    max-width: 1200px;
+  }
+}
+
+.pagina {
+  background-color: #c3c3c3;
+  padding: 10px;
+}
+.pagina__imagen {
+  height: 170px;
+}
+@media (min-width: 768px) {
+  .pagina__imagen {
+    height: 130px;
+  }
+}
+.pagina__enlaces {
+  display: flex;
+  justify-content: space-between;
+}
+.pagina__boton {
+  flex: 0 0 calc(50% - 5px);
+  padding: 10px 8px;
+  color: white;
+  background-color: #141414;
+  font-family: "PT Sans", sans-serif;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.pagina__boton:hover {
+  border: 1px solid black;
+  background-color: #c3c3c3;
+  color: #141414;
+}
+@media (min-width: 768px) {
+  .pagina__boton {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 992px) {
+  .pagina__boton {
+    font-size: 0.625rem;
+  }
 }

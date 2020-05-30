@@ -1,1 +1,7 @@
 -var enlaces = ['Servicios', 'Destacado', 'Contacto']
+mixin cajaPagina (imagen,titulo, enlacePagina, enlaceRepo)
+     .pagina
+          img(src="img/"+imagen, alt="imagen de pagina" class="pagina__imagen")
+          .pagina__enlaces
+               a(href=""+enlacePagina class="boton pagina__boton")=titulo
+               a(href=""+enlaceRepo class="boton pagina__boton") Repositorio

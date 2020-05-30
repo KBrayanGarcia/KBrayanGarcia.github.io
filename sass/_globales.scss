@@ -1,6 +1,9 @@
 $fuente1: 'PT Sans', sans-serif;
 $fuente2: 'Open Sans', sans-serif;
-
+$color-primario:black;
+$color-primario-secundario:#141414;
+$color-claro:white;
+$color-claro-secundario:#c3c3c3;
 @mixin fuente($fuente){
      @if $fuente == $fuente2{
           font-family: $fuente2;
@@ -12,9 +15,9 @@ $fuente2: 'Open Sans', sans-serif;
 }
 @mixin contenedor(){
      width: 95%;
+     margin: 0 auto;
      @include media(tablets){
           max-width: 1200px;
-          margin: 0 auto;
      }
 }
 
@@ -37,4 +40,18 @@ html{
 }
 a{
      text-decoration: none;
+}
+img{
+     width: 100%;
+     max-width: 100%;
+}
+.boton{
+     display: inline-block;
+     text-transform: uppercase;
+     border-radius: 8px;
+     text-align: center;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -ms-border-radius: 8px;
+     -o-border-radius: 8px;
 }

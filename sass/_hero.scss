@@ -14,7 +14,7 @@
      }
      &:before{
           content: ' ';
-          background-color: rgba(black, .60);
+          background-color: rgba($color-primario, .60);
           position: absolute;
           top: 0;
           bottom: 0;
@@ -23,13 +23,13 @@
      }
      &__contenedor{
           z-index: 1;
-          color: white;
+          color: $color-claro;
           text-align: center;
           @include contenedor();
      }
      &__button{
           display:block;
-          color: white;
+          color: $color-claro;
      }
      &__title,
      &__ubicacion{
@@ -50,7 +50,7 @@
      &__button{
           display: inline-block;
           background-color: white;
-          color: black;
+          color: $color-primario;
           @include fuente($fuente1);
           padding: 0.625rem 3.125rem;
           text-transform: uppercase;
@@ -65,7 +65,7 @@
           -ms-transition: all .3s ease-in-out;
           -o-transition: all .3s ease-in-out;
           &:hover{
-               background-color: #c3c3c3;
+               background-color: $color-claro-secundario;
           }
      }
      
