@@ -30,6 +30,7 @@ a {
 img {
   width: 100%;
   max-width: 100%;
+  vertical-align: middle;
 }
 
 .boton {
@@ -239,6 +240,14 @@ img {
   background-color: #c3c3c3;
   padding: 10px;
 }
+.pagina:hover .pagina__tecnologias {
+  max-height: 100px;
+  padding: 5px 5px;
+}
+.pagina__imagen-tec {
+  position: relative;
+  overflow: hidden;
+}
 .pagina__imagen {
   height: 170px;
 }
@@ -247,9 +256,36 @@ img {
     height: 130px;
   }
 }
+.pagina__tecnologias {
+  display: inline-block;
+  background-color: #c3c3c3;
+  max-height: 0px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.pagina__tecnologia-titulo {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.pagina__tecnologia {
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+}
 .pagina__enlaces {
   display: flex;
   justify-content: space-between;
+  margin-top: 5px;
 }
 .pagina__boton {
   flex: 0 0 calc(50% - 5px);

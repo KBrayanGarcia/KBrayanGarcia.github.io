@@ -1,7 +1,11 @@
 -var enlaces = ['Servicios', 'Destacado', 'Contacto']
-mixin cajaPagina (imagen,titulo, enlacePagina, enlaceRepo)
+mixin cajaPagina (imagen,titulo, tecno, enlacePagina, enlaceRepo)
      .pagina
-          img(src="img/"+imagen, alt="imagen de pagina" class="pagina__imagen")
+          .pagina__imagen-tec
+               img(src="img/"+imagen, alt="imagen de pagina" class="pagina__imagen")
+               .pagina__tecnologias 
+                    h4.pagina__tecnologia-titulo Tecnologias Aplicadas
+                    p.pagina__tecnologia=tecno
           .pagina__enlaces
                a(href=""+enlacePagina class="boton pagina__boton")=titulo
                a(href=""+enlaceRepo class="boton pagina__boton") Repositorio
